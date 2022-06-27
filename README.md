@@ -1,2 +1,2 @@
-#!/usr/bin/python3
-This project will help us understand python
+#!/usr/bin/bash
+Here are python programshonhon
