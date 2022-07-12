@@ -3,5 +3,6 @@ def no_c(my_string):
     x = ""
     for i in my_string:
         if (i.lower()) == 'c':
-            x= x + my_string(i)
+            continue
+        x += i
     return x
