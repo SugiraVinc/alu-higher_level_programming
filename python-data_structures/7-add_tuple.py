@@ -6,6 +6,10 @@ def add_tuple(tuple_a=(), tuple_b=()):
     tuple_c = []
     add_a = []
     add_b = []
+    if len_a >= 2 and len_b > 2:
+        add_element.append(add_a[0] + add_b[0])
+        add_element.append(add_a[1] + add_b[1])
+        tuple_c = tuple(tuple_c)
     if len_a < 2 and len_b < 2:
         if len_a < 1:
             add_a = list(tuple_a)
@@ -25,11 +29,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
             add_a = list(tuple_a)
         if len_b >= 2:
             add_b = list(tuple_b)
-        add_element.append(add_a[0] + add_b[0])
-        add_element.append(add_a[1] + add_b[1])
-        tuple_c = tuple(add_element)
-        return tuple_c
-    if len_a >= 2 and len_b >= 2:
         add_element.append(add_a[0] + add_b[0])
         add_element.append(add_a[1] + add_b[1])
         tuple_c = tuple(add_element)
