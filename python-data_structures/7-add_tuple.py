@@ -10,7 +10,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
         tuple_c.append(tuple_a[1] + tuple_b[1])
         add_b = tuple(tuple_c)
         return add_b
-    if len_a < 2 and len_b < 2:
+    if len_a < 2 or len_b < 2:
         if len_a < 1:
             add_a = list(tuple_a)
             add_a.append(0)
