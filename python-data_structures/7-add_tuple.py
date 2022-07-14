@@ -25,10 +25,10 @@ def add_tuple(tuple_a=(), tuple_b=()):
         if len_b == 1:
             add_b = list(tuple_b)
             add_b.append(0)
-        if len_a >= 2:
-            add_a = list(tuple_a)
         if len_b >= 2:
             add_b = list(tuple_b)
+        if len_a >= 2:
+            add_a = list(tuple_a)
         tuple_c.append(add_a[0] + add_b[0])
         tuple_c.append(add_a[1] + add_b[1])
         add_b = tuple(tuple_c)
