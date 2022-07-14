@@ -22,7 +22,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
             add_b.append(0)
         elif len_a >= 2:
             add_a = list(tuple_a)
-        else len_b >= 2:
+        elif len_b >= 2:
             add_b = list(tuple_b)
         add_element.append(add_a[0] + add_b[0])
         add_element.append(add_a[1] + add_b[1])
