@@ -2,8 +2,6 @@
 """
 This module defines a class - Rectangle
 """
-
-
 class Rectangle:
     """
     This class has two attributes
