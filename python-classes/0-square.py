@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-# This has no module in it.
+"""
+THIS CODE CONTAINS NO MODULESL
+"""
+
+
 class Square():
-    '''
-    This class is a square and empty
-    '''
+    """
+    CLASS IS A SQUARE CLASS AND IS EMPTY
+    """
