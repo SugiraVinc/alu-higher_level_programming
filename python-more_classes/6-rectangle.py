@@ -2,6 +2,8 @@
 """
 This module defines a class - Rectangle
 """
+
+
 class Rectangle:
     """
     This class has two attributes
@@ -9,7 +11,7 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-    def __init__(self, width= 0, height= 0):
+    def __init__(self, width=0, height=0):
         """
         instantiates width and height
         """
@@ -64,7 +66,7 @@ class Rectangle:
     def __str__(self):
         counter = 0
         output = ""
-        if self.__width == 0 or self.__height == 0:
+        if self.__width== 0 or self.__height == 0:
             return ""
         else:
             while counter < self.__height:
