@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-def magic_string(n):
+def magic_string(n, name="BestSchool"):
     for i in range(n):
-        print("BestSchool")
+        return name
+
