@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def magic_string(n=0):
-    while i <= n:
+    for i in range(n):
         print("BestSchool")
