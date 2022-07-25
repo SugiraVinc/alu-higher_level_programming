@@ -2,4 +2,3 @@
 def magic_string(n, name="BestSchool"):
     for i in range(n):
         return name
-
