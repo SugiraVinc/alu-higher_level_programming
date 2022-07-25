@@ -5,6 +5,8 @@
 A BLOCKED CLASS THAT PREVENTS DYNAMIC CREATION OF INSTANCES
 '''
 class LockedClass(object):
+
+
     '''
     WE USE SLOT
     '''
