@@ -1,9 +1,14 @@
 #!/usr/bin/python3
-""" We are not importing any module other than urllib request"""
+""" module uses another module to request to make request """
 import urllib.request
 
-"""Give the url"""
-with urllib.request.urlopen('https://intranet.hbtn.io/status')
-html = response.read():
-   """ Le us display the content""" 
-    print(html.content)
+
+    """making request to provided url"""
+    with urllib.request.urlopen('https://intranet.hbtn.io/status') as response:
+        html = response.read()
+        print('Body response:')
+        print("\t- type: {}".format(type(html)))
+        print("\t- content: {}".format(html))
+        """ Decoding our content """
+        temp = str(html)
+        print("\t- utf8 content: {}".format(temp[2:-1]))
