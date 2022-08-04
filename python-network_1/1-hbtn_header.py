@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Modules definition, here the sys module helps us to set parameters or argumentss"""
+"""Modules definition, here the sys module helps us to set parameters or argumentss
+"""
 import urllib.request
 import sys
 
