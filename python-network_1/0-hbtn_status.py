@@ -9,3 +9,4 @@ req = urllib.request.Request('https://intranet.hbtn.io/status')
 with urllib.request.urlopen(req) as response:
     '''Printing the body of our fetch'''
     print(+str(req.getcode()))
+'''We can now run it'''
