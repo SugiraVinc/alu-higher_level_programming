@@ -2,7 +2,7 @@
 """ We are not importing any module other than urllib request"""
 import urllib.request
 
-
+"""Give the url"""
 with urllib.request.urlopen('https://intranet.hbtn.io/status')
 html = response.read():
    """ Le us display the content""" 
