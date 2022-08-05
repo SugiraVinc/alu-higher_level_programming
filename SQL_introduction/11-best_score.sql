@@ -1,7 +1,4 @@
 -- lists all records with the best score
-SELECT city, AVG(value) AS avg_temp
-FROM temperatures
-WHERE month=7 OR month=8
-GROUP BY city
-ORDER BY avg_temp DESC
-LIMIT 3;
+SELECT score, name FROM second_table
+WHERE score >= 10
+ORDER BY score DESC;
