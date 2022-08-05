@@ -1,9 +1,6 @@
--- genre
-SELECT DISTINCT tv_genres.name FROM tv_shows
-INNER JOIN tv_show_genres ON tv_shows.id = tv_show_genres.show_id
-INNER JOIN tv_genres ON tv_show_genres.genre_id = tv_genres.id
-WHERE tv_genres.name NOT IN
-(SELECT tv_genres.name FROM tv_shows INNER JOIN tv_show_genres
-ON tv_shows.id = tv_show_genres.show_id INNER JOIN tv_genres
-ON tv_show_genres.genre_id = tv_genres.id WHERE tv_shows.title='Dexter')
-ORDER BY tv_genres.name;
+-- All ID genres
+SELECT tv_shows.title, tv_show_genres.genre_id
+FROM tv_shows
+LEFT OUTER JOIN tv_show_genres
+ON tv_shows.id = tv_show_genres.show_id
+ORDER BY tv_shows.title, tv_show_genres.genre_id;
