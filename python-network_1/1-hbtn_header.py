@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" the sys module helps us to automatically assign arguments from the libraries """
+""" the sys module helps us to automatically assign arguments"""
 import urllib.request
 import sys
 
