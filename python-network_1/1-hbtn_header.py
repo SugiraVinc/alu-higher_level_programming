@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 import urllib.request
 import sys
-"""We use sys to add arguments"""
+""" the sys module helps us to automatically assign arguments from the libraries """
 
-""" Providing url"""
 if __name__ = "__main__":
-    """ Using the sys module or library to provide url argument """
+    """ Accessing the request"""
 
     req = sys.argv[1]
     with urllib.request.urlopen(req) as response:
