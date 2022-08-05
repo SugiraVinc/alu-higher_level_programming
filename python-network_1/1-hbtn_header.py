@@ -4,7 +4,7 @@ import urllib.request
 import sys
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     """ Accessing the request"""
 
     req = sys.argv[1]
