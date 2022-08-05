@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+""" the sys module helps us to automatically assign arguments from the libraries """
 import urllib.request
 import sys
-""" the sys module helps us to automatically assign arguments from the libraries """
+
 
 if __name__ = "__main__":
     """ Accessing the request"""
