@@ -6,9 +6,9 @@ def add_integer(a, b=98):
     """
     Raising the type error message
     """
-    if type(a) != int and type(a) != float:
+    if type(a) != int or float:
         raise TypeError(" a must be an integer ")
-    if type(b) != int and type(b) != float:
+    if type(b) != int or float:
         raise TypeError(" b must be an integer ")
     if type(a, float):
         a = int(a)
