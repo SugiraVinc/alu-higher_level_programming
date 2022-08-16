@@ -9,8 +9,8 @@ def add_integer(a, b=98):
             sum = a+b
         if type(b) == int or float:
             sum = a+b
+        else:
+            raise TypeError(" b must be an integer")
     except TypeError:
         print(" a must be an integer ")
-    else:
-        print(" b must be an integer ")
     return int(a) + int(b)
