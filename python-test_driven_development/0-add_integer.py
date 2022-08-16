@@ -6,10 +6,10 @@ def add_integer(a, b=98):
     """
     Raising the type error message
     """
-    if not type(a, int) or not type(a, float):
+    if not isinstance(a, int) or not isinstance(a, float):
         raise TypeError(" a must be an integer ")
-    if not type(b, int) or not type(b, float):
+    if not isinstance(b, int) or not isinstance(b, float):
         raise TypeError(" b must be an integer ")
-    if type(a) == int or float
+    if isinstance(a) == int or float
         sum = a+b
     return sum
