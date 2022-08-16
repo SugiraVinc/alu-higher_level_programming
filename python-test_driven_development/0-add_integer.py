@@ -9,6 +9,3 @@ def add_integer(a, b=98):
     except TypeError:
         print(" a must be an integer ")
     return sum
-
-#test the code
-a = 5
