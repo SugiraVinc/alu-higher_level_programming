@@ -10,6 +10,4 @@ def add_integer(a, b=98):
         raise TypeError(" a must be an integer ")
     if not isinstance(b, int):
         raise TypeError(" b must be an integer ")
-    else:
-        sum = a+b
     return sum
