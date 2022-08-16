@@ -1,7 +1,12 @@
 #!/usr/bin/python3
+""" A function that adds two numbers """
 def add_integer(a, b=98):
-    a = int(a)
-    b = int(b)
-    if type(a,b) not in (float, int):
-        raise TypeError(" a must be an integer ")
-    return a+b
+    try:
+        if type(a) == int or float:
+            sum = a+b
+    except TypeError:
+        print(" a must be an integer ")
+    return sum
+
+#test the code
+a = 5
