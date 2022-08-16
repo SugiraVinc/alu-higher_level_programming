@@ -1,0 +1,22 @@
+import unittest
+
+import BSEProject_trial
+from BSEProject_trial import add_integer
+class testAdd(unittest.TestCase):
+
+    def test_add_integer(self):
+        result = BSEProject_trial.add_integer('b', 5)
+        self.assertEqual(result)
+
+C:\Users\Lenovo\Downloads\Python\PracticeTutu\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm Community Edition 2022.1.3\plugins\python-ce\helpers\pycharm\_jb_unittest_runner.py" --target test_add.testAdd.test_add_integer
+Testing started at 12:27 AM ...
+Launching unittests with arguments python -m unittest test_add.testAdd.test_add_integer in C:\Users\Lenovo\Downloads\Python\PracticeTutu
+
+
+Error
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Downloads\Python\PracticeTutu\test_add.py", line 8, in test_add_integer
+    result = BSEProject_trial.add_integer('b', 5)
+  File "C:\Users\Lenovo\Downloads\Python\PracticeTutu\BSEProject_trial.py", line 69, in add_integer
+    raise TypeError("a must be an integer")
+TypeError: a must be an integer
