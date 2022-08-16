@@ -11,4 +11,4 @@ def add_integer(a, b=98):
             sum = a+b
     except TypeError:
         print(" a must be an integer ")
-    return sum
+    return int(a) + int(b)
