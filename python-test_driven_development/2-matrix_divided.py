@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+""" We are doing a matrix unittest """
+
+
 def matrix_divided(matrix, div):
+    """ A matrix function that will help us test """
     if type(matrix) != int or type(matrix) != float:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     if len(matrix) != div:
