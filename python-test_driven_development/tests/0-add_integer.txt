@@ -1,22 +1,73 @@
-import unittest
+The ``0-add_integer.py`` module
+----------------------------
 
-import BSEProject_trial
-from BSEProject_trial import add_integer
-class testAdd(unittest.TestCase):
-
-    def test_add_integer(self):
-        result = BSEProject_trial.add_integer('b', 5)
-        self.assertEqual(result)
-
-C:\Users\Lenovo\Downloads\Python\PracticeTutu\Scripts\python.exe "C:\Program Files\JetBrains\PyCharm Community Edition 2022.1.3\plugins\python-ce\helpers\pycharm\_jb_unittest_runner.py" --target test_add.testAdd.test_add_integer
-Testing started at 12:27 AM ...
-Launching unittests with arguments python -m unittest test_add.testAdd.test_add_integer in C:\Users\Lenovo\Downloads\Python\PracticeTutu
+Using ``add_integer`` function
+-----------------------------
 
 
-Error
-Traceback (most recent call last):
-  File "C:\Users\Lenovo\Downloads\Python\PracticeTutu\test_add.py", line 8, in test_add_integer
-    result = BSEProject_trial.add_integer('b', 5)
-  File "C:\Users\Lenovo\Downloads\Python\PracticeTutu\BSEProject_trial.py", line 69, in add_integer
-    raise TypeError("a must be an integer")
-TypeError: a must be an integer
+importing the function from the module:
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+checking use of module documentation:
+	>>> count = __import__("0-add_integer").__doc__
+	>>> len(count) > 1
+	True
+
+checking function documentation:
+	>>> count = __import__("0-add_integer").add_integer.__doc__
+	>>> len(count) > 1
+	True
+
+checking use of both integers:
+	>>> add_integer(1, 1)
+	2
+
+checking int and float:
+	>>> add_integer(1, 1.2)
+	2
+
+checking float and int:
+	>>> add_integer(1.2, 1)
+	2
+
+checking float and float:
+	>>> add_integer(1.2, 1.2)
+	2
+
+checking int  input:
+	>>> add_integer(1)
+	99
+
+checking float input only:
+	>>> add_integer(1.2)
+	99
+
+checking int and string:
+	>>> add_integer(1, "2")
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
+check string and int:
+	>>> add_integer("1", 1)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+check string and string:
+	>>> add_integer("1", "1")
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+checking for overflow:
+	>>> add_integer(1, float('inf'))
+	Traceback (most recent call last):
+	...
+	OverflowError: cannot convert float infinity to integer
+
+check for Nan:
+	>>> add_integer(1, float('nan'))
+	Traceback (most recent call last):
+	...
+	ValueError: cannot convert float NaN to integer
