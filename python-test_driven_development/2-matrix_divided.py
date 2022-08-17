@@ -8,15 +8,15 @@ def matrix_divided(matrix, div):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for raw in matrix:
         if len(matrix) != len(raw):
-        raise TypeError("Each row of the matrix must have the same size")
+            raise TypeError("Each row of the matrix must have the same size")
     if type(div) != int or type(div) != float:
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
     old_mat = []
     new_mat = []
-    for i in range len(matrix):
-        for j in range len(matrix):
+    for i in len(matrix):
+        for j in len(matrix):
             new_mat.append(old_mat)
             old_mat = []
     for i in new_mat:
