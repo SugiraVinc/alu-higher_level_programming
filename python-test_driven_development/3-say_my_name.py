@@ -4,7 +4,7 @@ A module to print names
 """
 
 
-def def say_my_name(first_name, last_name=""):
+def say_my_name(first_name, last_name=""):
     """
     A function that prints out both my names
     """
