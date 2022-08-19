@@ -4,20 +4,28 @@
 
 def matrix_divided(matrix, div):
     """ A matrix function that will help us test """
-    if type(matrix) != int or type(matrix) != float:
+
+
+    if type(matrix) != list:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for raw in matrix:
-        if len(matrix) != len(raw):
+        if type(raw) != list:
+            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        for data in raw:
+            if type(data) != int or type(data) != float:
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+    raw_size = len(matrix[0])
+    for raw in matrix:
+        if len(raw) != raw_size:
             raise TypeError("Each row of the matrix must have the same size")
     if type(div) != int or type(div) != float:
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    old_mat = []
-    new_mat = []
-    for i in len(matrix):
-        for j in len(matrix):
-            new_mat.append(old_mat)
-            old_mat = []
-    for i in new_mat:
-        print(' '.join(str(i)))
+    new_matrix = []
+    zero_list = []
+    for i in range(len(matrix)):
+        new_matrix.append(zero_list)
+        for x in range(len(matrix[i])):
+            new_matrix[i].append(round(matrix[i][x] / div, 2))
+    return new_matrix
