@@ -6,7 +6,7 @@ def matrix_divided(matrix, div):
     """ A matrix function that will help us test """
 
 
-    if type(matrix) != list:
+    if not isinstance(matrix, (list,)):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for raw in matrix:
         if type(raw) != list:
