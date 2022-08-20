@@ -2,6 +2,7 @@
 """A module to build a square"""
 
 def print_square(size):
+    """A function to display the square"""
     if type(size) != int:
         raise TypeError("size must be an integer")
     if size <= 0:
@@ -9,4 +10,4 @@ def print_square(size):
     if type(size) == float and size < 0:
         raise TypeError("size must be an integer")
     for i in size:
-        print("#")
+        print("#" * size)
