@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """A module for unittesting"""
 import unittest
-from 6-max_integer import max_integer
+max_integer = __import__('6-max_integer').max_integer
 
 
 class TestCaseMaxInteger(unittest.TestCase):
