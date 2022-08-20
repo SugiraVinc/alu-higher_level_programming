@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """A module to build a square"""
 
+
 def print_square(size):
     """A function to display the square"""
     if type(size) != int:
