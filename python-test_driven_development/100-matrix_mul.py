@@ -17,10 +17,10 @@ def matrix_mul(m_a, m_b):
     if m_b == [[]]:
         raise ValueError("m_b can't be empty")
     for element in range(len(m_a)):
-        if type(m_a[element]) != int or type(m_a[element]) != float:
+        if type(m_a[element]) != int and type(m_a[element]) != float:
             raise TypeError("m_a should contain only integers or floats")
     for x in range(len(m_b)):
-        if type(m_b[x]) != int or type(m_b[x]) != float:
+        if type(m_b[x]) != int and type(m_b[x]) != float:
                 raise TypeError("m_b should contain only integers or floats")
     raw_size = len(m_a[0])
     for raws in raw_size:
