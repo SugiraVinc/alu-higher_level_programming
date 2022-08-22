@@ -5,16 +5,18 @@
 def matrix_divided(matrix, div):
     """ A matrix function that will help us test """
 
+    TypeE = "matrix must be a matrix (list of lists) of integers/floats"
     for raw in matrix:
         if type(raw) != list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError(TypeE)
         for data in raw:
             if type(data) != int and type(data) != float:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError(TypeE)
     raw_size = len(matrix[0])
+    raw_sizeE = "Each row of the matrix must have the same size"
     for raw in matrix:
         if len(raw) != raw_size:
-            raise TypeError("Each row of the matrix must have the same size")
+            raise TypeError(raw_sizeE)
     if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
     if div == 0:
