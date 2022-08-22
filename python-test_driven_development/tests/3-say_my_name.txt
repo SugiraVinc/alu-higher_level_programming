@@ -9,3 +9,5 @@ Traceback (most recent call last):
 TypeError: last_name must be a string
 >>> say_my_name("Vincent", "Sugira")
 My name is Vincent Sugira
+>>> say_my_name("Sugira")
+My name is Sugira
