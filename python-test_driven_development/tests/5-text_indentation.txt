@@ -9,7 +9,8 @@ Traceback (most recent call last):
 TypeError: text_indentation() missing 1 required positional argument: 'text'
 >>> text_indentation('Sugira')
 Sugira
->>> text_indentation("")
+>>> text_indentation("I Love Poetry")
+I Love Poetry
 
 >>> text_indentation()
 Traceback (most recent call last):
