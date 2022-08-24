@@ -25,7 +25,7 @@ class Rectangle(Base):
         if d is not int:
             raise TypeError("width must be an integer")
         elif d <= 0:
-            raise ValueError("width must be >0")
+            raise ValueError("width must be > 0")
         else:
             self.__width = d
 
@@ -40,7 +40,7 @@ class Rectangle(Base):
         if z is not int:
             raise TypeError("height must be an integer")
         elif z <= 0:
-            raise ValueError("height must be >0")
+            raise ValueError("height must be > 0")
         else:
             self.__height = z
 
