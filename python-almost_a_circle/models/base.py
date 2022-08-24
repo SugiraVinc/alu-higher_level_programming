@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """A module to help with IDs"""
-class base:
+class Base:
     """A simple class"""
     __nb_objects = 0
     def __init__(self, id=None):
