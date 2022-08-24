@@ -22,9 +22,9 @@ class Rectangle(Base):
     @width.setter
     def width(self, d):
         """Width setter"""
-        if width is not int:
+        if d is not int:
             raise TypeError("width must be an integer")
-        elif width <= 0:
+        elif d <= 0:
             raise ValueError("width must be >0")
         else:
             self.__width = d
@@ -37,9 +37,9 @@ class Rectangle(Base):
     @height.setter
     def height(self, z):
         """set height"""
-        if height is not int:
+        if z is not int:
             raise TypeError("height must be an integer")
-        elif height <= 0:
+        elif z <= 0:
             raise ValueError("width must be >0")
         else:
             self.__height = z
@@ -52,9 +52,9 @@ class Rectangle(Base):
     @x.setter
     def x(self, a):
         """set x"""
-        if x is not int:
+        if a is not int:
             raise TypeError("height must be an integer")
-        elif x <= 0:
+        elif a <= 0:
             raise ValueError("x must be >= 0")
         else:
             self.__x = a
@@ -67,9 +67,9 @@ class Rectangle(Base):
     @y.setter
     def y(self, b):
         """Setter y"""
-        if y is not int:
+        if b is not int:
             raise TypeError("height must be an integer")
-        elif y <= 0:
+        elif b <= 0:
             raise ValueError("y must be >= 0")
         else:
             self.__y = b
