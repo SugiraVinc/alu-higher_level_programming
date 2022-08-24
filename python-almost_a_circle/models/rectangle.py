@@ -40,7 +40,7 @@ class Rectangle(Base):
         if z is not int:
             raise TypeError("height must be an integer")
         elif z <= 0:
-            raise ValueError("width must be >0")
+            raise ValueError("height must be >0")
         else:
             self.__height = z
 
@@ -53,7 +53,7 @@ class Rectangle(Base):
     def x(self, a):
         """set x"""
         if a is not int:
-            raise TypeError("height must be an integer")
+            raise TypeError("x must be an integer")
         elif a <= 0:
             raise ValueError("x must be >= 0")
         else:
@@ -68,7 +68,7 @@ class Rectangle(Base):
     def y(self, b):
         """Setter y"""
         if b is not int:
-            raise TypeError("height must be an integer")
+            raise TypeError("y must be an integer")
         elif b <= 0:
             raise ValueError("y must be >= 0")
         else:
