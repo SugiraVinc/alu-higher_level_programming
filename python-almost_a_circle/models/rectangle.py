@@ -43,11 +43,12 @@ class Rectangle(Base):
     def x(self, a):
         """set x"""
         self.__x = a
-    
-    @property
+
+        @property
     def y(self):
         """y getter"""
         return self.__y 
+
     @y.setter
     def y(self, b):
         """Setter y"""
