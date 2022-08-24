@@ -15,41 +15,41 @@ class Rectangle(Base):
         self.y = y
 
     # getter method for width
-    def get_width(self):
+    def width(self):
         """width getter"""
         return self.__width
 
     # setter method for width
-    def set_width(self, d):
+    def width(self, d):
         """Width setter"""
         self.__width = d
 
     # getter method for height
-    def get_height(self):
+    def height(self):
         """get height"""
         return self.__height
 
     # setter method for height
-    def set_height(self, z):
+    def height(self, z):
         """set height"""
         self.__height = z
 
     # x getter method
-    def get_x(self):
+    def x(self):
         """set x"""
         return self.__x
 
     # x setter
-    def set_x(self, a):
+    def x(self, a):
         """set x"""
         self.__x = a
     
     # y getter
-    def get_y(self):
+    def y(self):
         """y getter"""
         return self.__y
     
     # y setter
-    def set_y(self, b):
+    def y(self, b):
         """Setter y"""
         self.__y = b
