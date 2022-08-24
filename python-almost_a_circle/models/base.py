@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""A module to help with IDs"""
 class base:
     """A simple class"""
     __nb_objects = 0
