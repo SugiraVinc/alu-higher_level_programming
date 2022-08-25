@@ -102,7 +102,7 @@ class Rectangle(Base):
 
         if len(dct) > 0:
             for key, value in dct.items():
-                if key == "id" and value is None:
+                if key == "id" and a is None:
                     p = self.__width
                     r = self.__height
                     s = self.__x
