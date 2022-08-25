@@ -91,24 +91,24 @@ class Rectangle(Base):
                 format(o, p, r, s, t))
 
         def update(self, *args, **kwargs):
-        """take multi update"""
-        dct = {}
-        if args is not None and len(args) > 0:
-            keys = ['id', 'width', 'height', 'x', 'y']
-            for i in range(len(args) if len(args) <= 5 else 5):
-                dct[keys[i]] = args[i]
-        else:
-            dct = kwargs
+            """take multi update"""
+            dct = {}
+            if args is not None and len(args) > 0:
+                keys = ['id', 'width', 'height', 'x', 'y']
+                for i in range(len(args) if len(args) <= 5 else 5):
+                    dct[keys[i]] = args[i]
+            else:
+                dct = kwargs
 
-        if len(dct) > 0:
-            for key, value in dct.items():
-                if key == "id" and value is None:
-                    p = self.__width
-                    r = self.__height
-                    s = self.__x
-                    self.__init__(p, r, s, self.__y)
-                else:
-                    setattr(self, key, value)
+            if len(dct) > 0:
+                for key, value in dct.items():
+                    if key == "id" and value is None:
+                        p = self.__width
+                        r = self.__height
+                        s = self.__x
+                        self.__init__(p, r, s, self.__y)
+                    else:
+                        setattr(self, key, value)
 
     def to_dictionary(self):
             """dictionary formatting"""
