@@ -10,12 +10,12 @@ class Square(Rectangle):
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """ just string form """
-        d = self.id
-        b = self.height
-        c = self.x
-        e = self.y
-        return ("[Square] ({}) {}/{} - {}".format(d, c, e, b))
+        """String formatting"""
+        m = self.id
+        w = self.height
+        l = self.x
+        o = self.y
+        return ("[Square] ({}) {}/{} - {}".format(m, w, l, b))
 
     @property
     def size(self):
