@@ -107,8 +107,8 @@ class Rectangle(Base):
                     r = self.__height
                     s = self.__x
                     self.__init__(p, r, s, self.__y)
-        else:
-            setattr(self, key, a)
+                else:
+                    setattr(self, key, a)
 
     def to_dictionary(self):
             """dictionary formatting"""
