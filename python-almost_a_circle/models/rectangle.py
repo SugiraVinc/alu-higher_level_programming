@@ -20,13 +20,13 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def width(self, d):
+    def width(self, a):
         """Width setter"""
-        if type(d) != int:
+        if type(a) != int:
             raise TypeError("width must be an integer")
-        if d <= 0:
+        if a <= 0:
             raise ValueError("width must be > 0")
-        self.__width = d
+        self.__width = a
 
     @property
     def height(self):
@@ -34,13 +34,13 @@ class Rectangle(Base):
         return self.__height
 
     @height.setter
-    def height(self, z):
+    def height(self, a):
         """set height"""
-        if type(z) != int:
+        if type(a) != int:
             raise TypeError("height must be an integer")
-        if z <= 0:
+        if a <= 0:
             raise ValueError("height must be > 0")
-        self.__height = z
+        self.__height = a
 
     @property
     def x(self):
@@ -62,13 +62,13 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self, b):
+    def y(self, a):
         """Setter y"""
-        if type(b) != int:
+        if type(a) != int:
             raise TypeError("y must be an integer")
-        if b < 0:
+        if a < 0:
             raise ValueError("y must be >= 0")
-        self.__y = b
+        self.__y = a
 
     def area(self):
         """Calculating the Area"""
@@ -101,14 +101,14 @@ class Rectangle(Base):
             dct = kwargs
 
         if len(dct) > 0:
-            for key, value in dct.items():
-                if key == "id" and d is None:
+            for key, a in dct.items():
+                if key == "id" and a is None:
                     p = self.__width
                     r = self.__height
                     s = self.__x
                     self.__init__(p, r, s, self.__y)
                 else:
-                    setattr(self, key, d)
+                    setattr(self, key, a)
 
     def to_dictionary(self):
             """dictionary formatting"""
