@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 
 """A module to help with IDs"""
+import json
+import csv
+#import turtoo library function
+from random import choice as random
 
 
 class Base:
