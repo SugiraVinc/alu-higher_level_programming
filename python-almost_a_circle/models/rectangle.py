@@ -102,13 +102,13 @@ class Rectangle(Base):
 
         if len(dct) > 0:
             for key, value in dct.items():
-                if key == "id" and a is None:
+                if key == "id" and d is None:
                     p = self.__width
                     r = self.__height
                     s = self.__x
                     self.__init__(p, r, s, self.__y)
                 else:
-                    setattr(self, key, a)
+                    setattr(self, key, d)
 
     def to_dictionary(self):
             """dictionary formatting"""
