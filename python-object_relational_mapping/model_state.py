@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-"""model city module"""
-from model_state import Base, State
-from sqlalchemy import Column, Integer, ForeignKey, String
-from sqlalchemy.orm import relationship
+""" model state database declaration """
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
 
 
-class City(Base):
-    """
-    City class inherits from Base
-    """
-    __tablename__ = 'cities'
-    id = Column('id', Integer, primary_key=True, nullable=False)
+Base = declarative_base()
+
+
+class State(Base):
+    """ state class table """
+    # declare table name
+    __tablename__ = 'states'
+    # define colum names and characteristics
+    id = Column(Integer, primary_key=True, nullable=False)
     name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
