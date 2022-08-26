@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Module to link City and Base modules"""
+
+
 from model_state import Base, State
 from sqlalchemy import Column, Integer, ForeignKey, String
 from sqlalchemy.orm import relationship
-
 
 class City(Base):
     """
