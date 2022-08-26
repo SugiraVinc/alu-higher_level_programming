@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""model city-Base"""
+"""model city module"""
 from model_state import Base, State
 from sqlalchemy import Column, Integer, ForeignKey, String
 from sqlalchemy.orm import relationship
