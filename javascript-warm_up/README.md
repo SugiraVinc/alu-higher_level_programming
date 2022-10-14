@@ -1,0 +1,1 @@
+Our new beginning of studying java script
